@@ -1,0 +1,17 @@
+--- 
+services: 
+  rabbit-mq: 
+    container_name: Rabbit
+    image: rabbitmq:management
+    ports: 
+      - "5672:5672"
+      - "15672:15672"
+#  seceiver: 
+#    container_name: Receiver
+#    image: receiver
+#  sender: 
+#    container_name: Sender
+#    image: sender
+#    ports: 
+#      - "8080:8080"
+version: "3"
